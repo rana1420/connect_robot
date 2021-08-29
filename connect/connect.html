@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+background-image: url('https://static.vecteezy.com/system/resources/thumbnails/000/097/736/small/abstract-robot-background-vector.jpg');
+font-family: Arial, Helvetica, sans-serif;
+display:block;
+
+}
+
+
+input[type=text], input[type=password] {
+  width: auto;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display:block;
+  border: 1px solid;
+  box-sizing: border-box;
+  text-align: center;
+  background:none;
+
+ 
+}
+::placeholder { 
+  color:black;
+  
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 18px;
+  margin: 8px auto;
+  border: none;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  background-color: #f44336;
+}
+.content {
+ display: grid;
+    place-items: center;
+    height: 100vh;
+}
+a:link, a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+h2{
+text-align:center;
+color: #04AA6D;
+}
+</style>
+</head>
+<body>
+<h2> Login to robot</h2>
+<div class="content">
+<form action="/action_page.php" method="post">
+    <label for="SSID"><b>SSID:</b></label>
+    <input type="text" placeholder="Enter SSID" name="SSId" required>
+
+    <label for="psw"><b>Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	
+    <button type="button"><a href="home.html">Connect</a></button>
+	 <button type="button" class="cancelbtn">Cancel</button>
+</form>
+</div>
+</body>
+</html>
